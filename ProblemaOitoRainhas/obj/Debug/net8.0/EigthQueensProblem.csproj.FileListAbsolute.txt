@@ -1,0 +1,14 @@
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\bin\Debug\net8.0\EigthQueensProblem.exe
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\bin\Debug\net8.0\EigthQueensProblem.deps.json
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\bin\Debug\net8.0\EigthQueensProblem.runtimeconfig.json
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\bin\Debug\net8.0\EigthQueensProblem.dll
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\bin\Debug\net8.0\EigthQueensProblem.pdb
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.AssemblyInfoInputs.cache
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.AssemblyInfo.cs
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.csproj.CoreCompileInputs.cache
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.dll
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\refint\EigthQueensProblem.dll
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.pdb
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\EigthQueensProblem.genruntimeconfig.cache
+C:\Users\AndréMeyer\OneDrive - SMART CONSULTING\Área de Trabalho\EigthQueensProblem\EigthQueensProblem\EigthQueensProblem\obj\Debug\net8.0\ref\EigthQueensProblem.dll
