@@ -1,39 +1,47 @@
-# Visual Studio
 .vs/
 *.suo
 *.user
 *.userprefs
 *.sln.docstates
 
-# Build results
 [Bb]in/
 [Oo]bj/
 
-# Packages
 *.nupkg
 packages/
 
-# Visual Studio Code
 .vscode/
 
-# Rider
 .idea/
 *.sln.iml
 
-# Logs
 *.log
 
-# User-specific files
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
 
-# Temporary files
 *.tmp
 *.temp
 
-# Web
 node_modules/
 dist/
 tmp/
 temp/
+
+*.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+project.lock.json
+project.assets.json
+*.props
+*.targets
+*.sln.cache
+
+*.generated.cs
+*.g.cs
+*.g.i.cs
+
+dotnet-tools.json
