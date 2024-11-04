@@ -1,0 +1,39 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Packages
+*.nupkg
+packages/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Logs
+*.log
+
+# User-specific files
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+
+# Temporary files
+*.tmp
+*.temp
+
+# Web
+node_modules/
+dist/
+tmp/
+temp/

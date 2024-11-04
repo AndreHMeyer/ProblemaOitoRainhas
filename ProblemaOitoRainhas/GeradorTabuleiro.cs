@@ -7,68 +7,28 @@ namespace ProblemaOitoRainhas
     {
         public class Tabuleiro
         {
-            public const int altura = 8;
-            public const int largura = 8;
-            public int[,] matriz = new int[altura, largura];
+            public int altura { get; }
+            public int largura { get; }
+            public int[,] matriz { get; }
+
+            public Tabuleiro(int altura, int largura)
+            {
+                this.altura = altura;
+                this.largura = largura;
+                matriz = new int[altura, largura];
+            }
         }
 
-        private void GerarTabuleiro(Tabuleiro tabuleiro)
+        public void GerarTabuleiro(Tabuleiro tabuleiro)
         {
-            for (int i = 0; i < Tabuleiro.altura; i++)
+            for (int i = 0; i < tabuleiro.altura; i++)
             {
-                for (int j = 0; j < Tabuleiro.largura; j++)
+                for (int j = 0; j < tabuleiro.largura; j++)
                 {
                     tabuleiro.matriz[i, j] = 0;
                 }
             }
         }
-
-        private void ImprimirTabuleiro(Tabuleiro tabuleiro)
-        {
-            var posicoesRainhas = new List<int[]>();
-            int contador = 0;
-            string rainha = "R";
-
-            Console.WriteLine("            Tabuleiro");
-            Console.WriteLine("    -------------------------\n");
-
-            Console.Write("   ");
-            for (int j = 0; j < Tabuleiro.largura; j++)
-            {
-                Console.Write($"  {j + 1}");
-            }
-            Console.WriteLine("\n   ┌────────────────────────┐");
-
-            for (int i = 0; i < Tabuleiro.altura; i++)
-            {
-                Console.Write($" {i + 1} │");
-                for (int j = 0; j < Tabuleiro.largura; j++)
-                {
-                    if (tabuleiro.matriz[i, j] == 0)
-                    {
-                        Console.Write(" _ ");
-                    }
-                    else if (tabuleiro.matriz[i, j] == 1)
-                    {
-                        Console.Write($" {rainha} ");
-                        posicoesRainhas.Add(new int[] { i, j });
-                    }
-                }
-                Console.WriteLine("│");
-            }
-            Console.WriteLine("   └────────────────────────┘");
-
-            Console.WriteLine("\n\n");
-            Console.WriteLine("        Posições das Rainhas");
-            Console.WriteLine("    --------------------------");
-
-            foreach (var posicaoRainha in posicoesRainhas)
-            {
-                contador++;
-                Console.WriteLine($"     Posição Rainha {contador}: [{posicaoRainha[0] + 1}, {posicaoRainha[1] + 1}]");
-            }
-        }
-
 
         private bool PosicaoValida(Tabuleiro tabuleiro, int linha, int coluna)
         {
@@ -87,7 +47,7 @@ namespace ProblemaOitoRainhas
             }
 
             //Verifica a diagonal inferior esquerda
-            for (int i = linha, j = coluna; i < Tabuleiro.altura && j >= 0; i++, j--)
+            for (int i = linha, j = coluna; i < tabuleiro.altura && j >= 0; i++, j--)
             {
                 if (tabuleiro.matriz[i, j] == 1)
                     return false;
@@ -96,18 +56,18 @@ namespace ProblemaOitoRainhas
             return true;
         }
 
-        private bool ResolverOitoRainhas(Tabuleiro tabuleiro, int coluna)
+        public bool ResolverNRainhas(Tabuleiro tabuleiro, int coluna)
         {
-            if (coluna >= Tabuleiro.largura)
+            if (coluna >= tabuleiro.largura)
                 return true;
 
-            for (int i = 0; i < Tabuleiro.altura; i++)
+            for (int i = 0; i < tabuleiro.altura; i++)
             {
                 if (PosicaoValida(tabuleiro, i, coluna))
                 {
                     tabuleiro.matriz[i, coluna] = 1;
 
-                    if (ResolverOitoRainhas(tabuleiro, coluna + 1))
+                    if (ResolverNRainhas(tabuleiro, coluna + 1))
                         return true;
 
                     tabuleiro.matriz[i, coluna] = 0;
@@ -115,22 +75,6 @@ namespace ProblemaOitoRainhas
             }
 
             return false;
-        }
-
-        public void PosicionarRainhasNoTabuleiro()
-        {
-            Tabuleiro tabuleiro = new Tabuleiro();
-            GerarTabuleiro(tabuleiro);
-
-            if (ResolverOitoRainhas(tabuleiro, 0))
-            {
-                ImprimirTabuleiro(tabuleiro);
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("Solução não encontrada!");
-            }   
         }
     }
 }

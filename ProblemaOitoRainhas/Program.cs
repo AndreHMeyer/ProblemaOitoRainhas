@@ -6,9 +6,9 @@ namespace ProblemaOitoRainhas
     {
         static void Main(string[] args)
         {
-            GeradorTabuleiro gerador = new GeradorTabuleiro();
+            TabuleiroGUI tabuleiroGUI = new TabuleiroGUI();
 
-            gerador.PosicionarRainhasNoTabuleiro();
+            tabuleiroGUI.IniciarTabuleiro();
             Console.ReadLine();
         }
     }
